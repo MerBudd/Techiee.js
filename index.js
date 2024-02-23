@@ -35,11 +35,18 @@ const CHANNEL_ID = process.env['channel_id']
     
 ];
 
+  const generationConfig = {
+    temperature: 0.9,
+    topK: 1,
+    topP: 1,
+    maxOutputTokens: 2048,
+  };
+
 
 // Something bout Gemini idunno
 
 const ai = new GoogleGenerativeAI(API_KEY);
-const model = ai.getGenerativeModel({ model: MODEL, safetySettings });
+const model = ai.getGenerativeModel({ model: MODEL, safetySettings, generationConfig });
 
 
 // Bot
