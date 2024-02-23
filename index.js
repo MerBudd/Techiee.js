@@ -83,7 +83,7 @@ client.login(BOT_TOKEN);
 
 // Makes the final log
 
-    var finalLog = historyLogI.concat(historyLog);
+   // var finalLog = historyLogI.concat(historyLog);
 
        
  // Limits history and removes first message from log.
@@ -95,8 +95,8 @@ client.login(BOT_TOKEN);
      }
 
     const chat = model.startChat({
-     history: finalLog,
-
+     //history: finalLog,
+     history: historyLogI.concat(historyLog)
      safetySettings,
     });
        
