@@ -2,7 +2,6 @@
 
 import * as keep_alive from './keep_alive.cjs';
 import * as discord from 'discord.js';
-import { GatewayIntentBits } from 'discord.js';
 import { GoogleGenerativeAI, HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 
 
@@ -47,16 +46,16 @@ const CHANNEL_ID = process.env['channel_id']
 // Something bout Gemini idunno
 
 const ai = new GoogleGenerativeAI(API_KEY);
-const model = ai.getGenerativeModel({ model: MODEL });
+const model = ai.getGenerativeModel({ model: MODEL, safetySettings, generationConfig });
 
 
 // Bot
 
 const client = new discord.Client({
   intents: [
-    GatewayIntentBits.Guilds,
-    GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent,
+    discord.GatewayIntentBits.Guilds,
+    discord.GatewayIntentBits.GuildMessages,
+    discord.GatewayIntentBits.MessageContent,
   ],
 });
 
