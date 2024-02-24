@@ -4,13 +4,11 @@ Techiee is an experimental Discord AI Chatbot based on Google's Gemini Pro.
 
 ## What CAN Techie do?
 
-Techiee is... Well, a chatbot, like ChatGPT or Gemini. It uses the same Gemini (models) that Gemini (the chatbot) is based on, however, with the safety settings disabled (by default) so you can mess around with it.
+Techiee is... Well, a chatbot, like ChatGPT or Gemini. It uses the same Gemini (models) that Gemini (the chatbot) is based on, however, with many tweakable settings so you can mess around with it.
 
 ## Here's how YOU can configure Techiee
 
-You can use any Gemini model you want, even 1.5 Pro if you have access to it (you can change model by changing the value of MODEL in index.js) but if you wanna use 1.5 Pro you may NOT use it in production as that is against Google AI Studio's TOS.
-
-You can also tweak other settings like the safety settings, temperature, TopK etc.
+You can tweak settings like the safety settings, temperature, TopK etc.
 
 All you'll need to do is to set the environment secrets for the Discord Channel ID, your Discord Bot Token (https://discord.com/developers/applications) and your Google AI Studio API Key (which you can grab from https://aistudio.google.com/app/apikey).
 
