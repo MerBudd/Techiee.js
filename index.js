@@ -107,7 +107,7 @@ client.login(BOT_TOKEN);
 
     const chat = model.startChat({
      //history: finalLog,
-     history: historyLogI.concat(historyLog)
+     history: historyLogI.concat(historyLog),
      safetySettings,
     });
        
