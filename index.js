@@ -135,7 +135,7 @@ historyLog.push({
         historyLog.shift();
     }
     return text;
-    }
+    
 
 
    // Checking for empty messages
