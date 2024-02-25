@@ -156,7 +156,7 @@ historyLog.push({
     console.log(e)
    }
 
-});
+};
 
 /*
 
