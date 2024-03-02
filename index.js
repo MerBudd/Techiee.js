@@ -71,31 +71,23 @@ client.login(BOT_TOKEN);
     if (message.channel.id !== CHANNEL_ID) return;
 
        
-// Sets initial history
+    // Sets initial history
     var historyLogI = [
-
-
-    {
-      role: "user",
-          parts: "Hello!",
-            },
-    {
-      role: "model",
-          parts: "Hello! I am Techiee, an experimental chatbot built on Google's Gemini, developed by Tech and Budd. Or, your friendly neighborhood chatbot, as one might say. How can I help you?",
-            },
-                        ];
-
-// Sets user added history log
- 
-    var historyLog = [
-
+        {
+            role: "user",
+            parts: "Hello!",
+        },
+        {
+            role: "model",
+            parts: "Hello! I am Techiee, an experimental chatbot built on Google's Gemini, developed by Tech and Budd. Or, your friendly neighborhood chatbot, as one might say. How can I help you?",
+        },
     ];
 
+    // Sets user added history log
+    var historyLog = [];
 
-// Makes the final log
-
-   // var finalLog = historyLogI.concat(historyLog);
-
+    // Makes the final log
+    var finalLog = historyLogI.concat(historyLog);
        
  // Limits history and removes first message from log.
        
@@ -106,9 +98,8 @@ client.login(BOT_TOKEN);
      }
 
     const chat = model.startChat({
-     //history: finalLog,
-     history: historyLogI.concat(historyLog),
-     safetySettings,
+        history: finalLog,
+        safetySettings,
     });
        
 const result = await chat.sendMessage(message.cleanContent);     
@@ -116,17 +107,17 @@ const response = await result.response;
 const text = response.text();
 
 
-// Saves user input and bot output into history
-       
-  historyLog.push({
-    role: "user",
-    parts: message,
-        });
+    // Saves user input and bot output into history
 
-   historyLog.push({
-    role: "model",
-    parts: text,
-   });
+    historyLog.push({
+        role: "user",
+        parts: message.content,
+    });
+
+    historyLog.push({
+        role: "model",
+        parts: text,
+    });
 
 
    // Checking for empty messages
