@@ -4,6 +4,10 @@ Techiee is an experimental Discord AI Chatbot based on Google's Gemini Pro.
 
 Techiee is still WIP, so not everything works yet!
 
+Techiee can be VERY random, but I love him for that...
+
+<img src="https://github.com/MerBudd/Techiee/assets/82082386/d9b79ff9-9274-4959-8cd6-317026625c84" width=540 height=283>
+
 If you wanna fork this repo, you can, but, there are much better chatbots based on Gemini to fork.
 
 ## What CAN Techie do?
