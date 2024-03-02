@@ -20,6 +20,8 @@ You can use a hosting service like Render (which is free and works just fine) (r
 
 We can't use Replit (at least, if you want to host it 24/7 for free) because they killed their webservers. You can pay Replit to get it running 24/7 with their new "Deployments" if you want.
 
+## Features
+
 ### Features done
 
 - The actual bot
