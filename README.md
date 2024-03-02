@@ -22,8 +22,8 @@ We can't use Replit (at least, if you want to host it 24/7 for free) because the
 
 ### Features done
 
-✅ The actual bot
-✅ 24/7
+- The actual bot
+- 24/7
 
 ### Features being worked on
 
