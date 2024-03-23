@@ -13,6 +13,12 @@
 
     // Sets user added history log
         var historyLog = [];
+    // makes func
+      function saveHistoryLogToFile(historyLog) {
+      const json = JSON.stringify(historyLog, null, 2);
+          fs.writeFileSync('historyLog.json', json);
+}
+        
 
     // Makes the final log
         var finalLog = historyLogI.concat(historyLog);
@@ -26,7 +32,7 @@
 import * as keep_alive from './keep_alive.cjs';
 import * as discord from 'discord.js';
 import { GoogleGenerativeAI, HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
-
+const fx = require('fx');
 
 // Defined variables
 
@@ -88,6 +94,12 @@ client.on("ready", () => {
 
 client.login(BOT_TOKEN);
 
+if (fs.existsSync('historyLog.json')) {
+      const data = fs.readFileSync('historyLog.json', 'utf8');
+          historyLog = JSON.parse(data);
+          }
+
+
  client.on("messageCreate", async (message) => {
   try{
     if (message.author.bot) return;
@@ -125,7 +137,9 @@ const text = response.text();
         role: "model",
         parts: text,
     });
-
+   
+  // saves log 
+  saveHistoryLogToFile(historyLog);
 
    // Checking for empty messages
        
