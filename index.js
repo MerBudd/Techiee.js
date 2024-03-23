@@ -7,7 +7,7 @@ import { GoogleGenerativeAI, HarmBlockThreshold, HarmCategory } from "@google/ge
 
 // Defined variables
 
-const MODEL = "gemini-1.0-pro-latest"
+const MODEL = "gemini-1.5-pro-latest"
 const API_KEY = process.env['gemini_api_key']
 const BOT_TOKEN = process.env['bot_token']
 const CHANNEL_ID = process.env['channel_id']
