@@ -1,3 +1,26 @@
+
+    // Sets initial history
+        var historyLogI = [
+                {
+         role: "user",
+         parts: "Hello!",
+                },
+                {
+         role: "model",
+         parts: "Hello! I am Techiee, an experimental chatbot built on Google's Gemini, developed by Tech and Budd. Or, your friendly neighborhood chatbot, as one might say. How can I help?",
+                },
+                          ];
+
+    // Sets user added history log
+        var historyLog = [];
+
+    // Makes the final log
+        var finalLog = historyLogI.concat(historyLog);
+                
+
+
+
+
 // Dependencies
 
 import * as keep_alive from './keep_alive.cjs';
@@ -71,23 +94,7 @@ client.login(BOT_TOKEN);
     if (message.channel.id !== CHANNEL_ID) return;
 
        
-    // Sets initial history
-    var historyLogI = [
-        {
-            role: "user",
-            parts: "Hello!",
-        },
-        {
-            role: "model",
-            parts: "Hello! I am Techiee, an experimental chatbot built on Google's Gemini, developed by Tech and Budd. Or, your friendly neighborhood chatbot, as one might say. How can I help you?",
-        },
-    ];
 
-    // Sets user added history log
-    var historyLog = [];
-
-    // Makes the final log
-    var finalLog = historyLogI.concat(historyLog);
        
  // Limits history and removes first message from log.
        
