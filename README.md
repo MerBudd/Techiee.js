@@ -2,27 +2,48 @@
 
 Techiee is an experimental Discord AI Chatbot based on Google's Gemini Pro.
 
-Techiee is still WIP, so not everything works yet!
+Techiee is still a work in progress, so not everything works yet!
 
 Techiee can be VERY random, but I love him for that...
 
 <img src="https://github.com/MerBudd/Techiee/assets/82082386/d9b79ff9-9274-4959-8cd6-317026625c84" width=540 height=283>
 
-## !! If you wanna fork this repo, you can, but, there are much better chatbots based on Gemini to fork! Many of Techiee's functions still aren't done! !!
+## !! If you want to fork this repo, you can, but there are much better chatbots based on Gemini to fork! Many of Techiee's functions still aren't done! !!
 
-## What CAN Techie do?
+## What CAN Techiee do?
 
 Techiee is... Well, a chatbot, like ChatGPT or Gemini. It uses the same Gemini (models) that Gemini (the chatbot) is based on, however, in Discord!
 
 ## Here's how YOU can configure Techiee
 
-You can tweak settings like the safety settings, temperature, TopK etc.
+You can tweak settings like the safety settings, temperature, TopK, etc.
 
-All you'll need to do is to set the environment secrets for the Discord Channel ID, your Discord Bot Token (https://discord.com/developers/applications) and your Google AI Studio API Key (which you can grab from https://aistudio.google.com/app/apikey).
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/MerBudd/Techiee.git
+   cd Techiee
+   ```
 
-You can use a hosting service like Render (which is free and works just fine) (render.com), grab your web server URL, and then use the keep_alive.cjs file to run it 24/7 with UptimeRobot (you can find detailed tutorials online)
+2. **Set Environment Variables:**
+   - Rename the `.env.example` file to `.env`.
+   - Open the `.env` file and add the following variables:
+     ```plaintext
+     gemini_api_key=YOUR_GOOGLE_AI_STUDIO_API_KEY
+     bot_token=YOUR_DISCORD_BOT_TOKEN
+     channel_id=YOUR_DISCORD_CHANNEL_ID
+     ```
 
-We can't use Replit (at least, if you want to host it 24/7 for free) because they killed their webservers. You can pay Replit to get it running 24/7 with their new "Deployments" if you want.
+3. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Run the Bot:**
+   ```bash
+   node .
+   ```
+
+Ensure you have Node.js installed on your system before proceeding with the installation.
 
 ## Features
 
@@ -33,9 +54,9 @@ We can't use Replit (at least, if you want to host it 24/7 for free) because the
 
 ### Features being worked on
 
-- History log (it like half-works? Most of the time it doesn't work but something happens once in a blue moon and it decides to remember stuff.)
-- Safety settings (same thing the history log)
+- History log (it's like half-works? Most of the time it doesn't work, but sometimes it decides to remember stuff.)
+- Safety settings (similar to the history log)
 
 ### Features to-do
 
-- There currently aren't any features we want to work on that we haven't started working on yet.
+- There aren't currently any features we want to work on that we haven't started working on yet.
