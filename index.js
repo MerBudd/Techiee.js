@@ -1,3 +1,7 @@
+// Carga las variables de entorno del archivo .env
+import dotenv from 'dotenv';
+dotenv.config();
+
 // Sets initial history
 var historyLogI = [
   {
@@ -23,7 +27,6 @@ function saveHistoryLogToFile(historyLog) {
 var finalLog = historyLogI.concat(historyLog);
 
 // Dependencies
-
 import * as keep_alive from "./keep_alive.cjs";
 import * as discord from "discord.js";
 import {
@@ -31,17 +34,16 @@ import {
   HarmBlockThreshold,
   HarmCategory,
 } from "@google/generative-ai";
-const fx = require("fx");
+import fs from "fs"; // Cambio aquí: quitar * as fs
+import * as fx from "fx";
 
 // Defined variables
-
 const MODEL = "gemini-1.0-pro-latest";
 const API_KEY = process.env["gemini_api_key"];
 const BOT_TOKEN = process.env["bot_token"];
 const CHANNEL_ID = process.env["channel_id"];
 
 // Gemini Configs
-
 const safetySettings = [
   {
     category: HarmCategory.HARM_CATEGORY_HARASSMENT,
@@ -69,7 +71,6 @@ const generationConfig = {
 };
 
 // Something bout Gemini idunno
-
 const ai = new GoogleGenerativeAI(API_KEY);
 const model = ai.getGenerativeModel({
   model: MODEL,
@@ -78,7 +79,6 @@ const model = ai.getGenerativeModel({
 });
 
 // Bot
-
 const client = new discord.Client({
   intents: [
     discord.GatewayIntentBits.Guilds,
@@ -104,7 +104,6 @@ client.on("messageCreate", async (message) => {
     if (message.channel.id !== CHANNEL_ID) return;
 
     // Limits history and removes first message from log.
-
     var limit = 30;
     if (historyLog.length > limit) {
       historyLog.shift();
@@ -121,7 +120,6 @@ client.on("messageCreate", async (message) => {
     const text = response.text();
 
     // Saves user input and bot output into history
-
     historyLog.push({
       role: "user",
       parts: message.content,
@@ -136,7 +134,6 @@ client.on("messageCreate", async (message) => {
     saveHistoryLogToFile(historyLog);
 
     // Checking for empty messages
-
     if (text === "") {
       return;
     } else {
