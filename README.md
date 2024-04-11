@@ -19,7 +19,7 @@ You can tweak settings like the safety settings, temperature, TopK, etc. inside 
 
 You can check out [SETUP.md](https://github.com/MerBudd/Techiee.js/blob/main/SETUP.md) for instructions on how to run it locally or with a hosting service (Render) and run it 24/7.
 
-## Techiee's Features
+## Techiee.js' Features
 
 ### Features done
 
