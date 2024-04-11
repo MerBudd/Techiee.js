@@ -2,7 +2,7 @@
 
 ## <img src="https://github.com/MerBudd/Techiee.js/assets/82082386/43cc9180-c22f-4418-8949-9834a5066089" width="30" height="30" align=top> Techiee is an experimental Discord AI Chatbot based on Google's Gemini Pro.
 
-## This is the JavaScript version of Techiee! For the much better and much more advanced version of Techiee, go to [Techiee.py](https://github.com/MerBudd/Techiee.py). If you want to fork this repo, you can, but there are much better chatbots based on Gemini (including [Techiee.py](https://github.com/MerBudd/Techiee)) to fork! Many of Techiee.js' functions still aren't done!
+## This is the JavaScript version of Techiee! For the much better and much more advanced version of Techiee (based on Python), go to [Techiee.py](https://github.com/MerBudd/Techiee.py). If you want to fork this repo, you can, but there are much better chatbots based on Gemini (including [Techiee.py](https://github.com/MerBudd/Techiee)) to fork! Many of Techiee.js' functions still aren't done!
 
 ## What is Techiee?
 
