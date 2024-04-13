@@ -5,20 +5,20 @@ First, grab your [Google AI Studio API Key](https://aistudio.google.com/app/apik
 You can use a hosting service like [Render](render.com) (which is free and works just fine). You can also host locally on your computer. If you host with Render, you can host 24/7.
 
 ## How to run locally
-- If you don't have [Node.js](https://nodejs.org) installed, install it first!
+- Please make sure that you have [git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org) installed on your computer before proceeding!
 1. Clone this repo, either via downloading it or via a Terminal/Command Prompt by doing:
    ```bash
    git clone https://github.com/MerBudd/Techiee.js.git
    cd Techiee.js
    ```
 2. Rename [.env.example](https://github.com/MerBudd/Techiee.py/blob/main/.env.example) to `.env`
-3. Open `.env` and put your Google AI Studio API Key, your bot's token, and channel ID `.env`
+3. Open `.env` and put your Google AI Studio API Key, your bot's token, and channel ID in `.env`, then save.
 4. To install dependencies, do:
-   ```bash
+   ```
    npm install
    ```
 5. To run the bot, do:
-   ```bash
+   ```
    node Techiee.js
    ```
 
