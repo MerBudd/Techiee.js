@@ -28,10 +28,10 @@ You can use a hosting service like [Render](render.com) (which is free and works
 3. Sign up or log in
 4. In the dashboard, click "New", then "Web service". Then click "Next".
 5. If your forked repo is private, connect your GitHub account to Render and click "Connect" on the repo. If it's public, you can simply search for it.
-6. You can set the name to anything you want.
+6. Set the name to anything you want.
 7. In the "Build command" section, put `npm install` and in the "Start command" section, put `node Techiee.js`
-8. At the bottom, choose the free plan (it's more than enough to run Techiee)
-9. At the VERY bottom, in the Enivronment secrets section, create 3 new secrets called `gemini_api_key` and `bot_token`, `channel_id` and set their values to your Google AI Studio API Key, your Bot's token and the channel which Techiee will respond in respectively
+8. Choose the free plan (it's more than enough to run Techiee)
+9. In the Enivronment secrets section, create 3 new secrets called `gemini_api_key` and `bot_token`, `channel_id` and set their values to your Google AI Studio API Key, your Bot's token and the channel which Techiee will respond in respectively
 10. Click "Create Web Service"
 
 ## Do 24/7 with Render & UptimeRobot
