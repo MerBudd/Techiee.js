@@ -31,7 +31,7 @@ You can use a hosting service like [Render](render.com) (which is free and works
 6. Set the name to anything you want.
 7. In the "Build command" section, put `npm install` and in the "Start command" section, put `node Techiee.js`
 8. Choose the free plan (it's more than enough to run Techiee)
-9. In the Enivronment secrets section, create 3 new secrets called `gemini_api_key`, `bot_token` and `channel_id` and set their values to your Google AI Studio API Key, your Bot's token and the channel which Techiee will respond in respectively
+9. In the Enivronment secrets section, create 3 new secrets called `GEMINI_API_KEY`, `DISCORD_BOT_TOKEN` and `DISCORD_CHANNEL_ID` and set their values to your Google AI Studio API Key, your Bot's token and the channel which Techiee will respond in respectively
 10. Click "Create Web Service"
 
 ## Do 24/7 with Render & UptimeRobot
