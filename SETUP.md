@@ -1,4 +1,4 @@
-# How to set Techiee up
+# How to set Techiee.js up
 
 First, grab your [Google AI Studio API Key](https://aistudio.google.com/app/apikey), your [Discord Bot Token](https://discord.com/developers/applications) and the Discord Channel ID (where Techiee will reply to messages in), you will need these for later!
 
@@ -41,3 +41,5 @@ You can use a hosting service like [Render](render.com) (which is free and works
 4. In the dashboard, click "New monitor"
 5. Paste the URL you copied into the "URL to monitor" field (you can set the "friendly name" to anything you want)
 6. Click "Create monitor"
+
+After you've done everything, you can configure the bot
