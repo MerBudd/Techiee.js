@@ -36,9 +36,9 @@ const fx = require("fx");
 // Defined variables
 
 const MODEL = "gemini-1.0-pro-latest";
-const API_KEY = process.env["gemini_api_key"];
-const BOT_TOKEN = process.env["bot_token"];
-const CHANNEL_ID = process.env["channel_id"];
+const API_KEY = process.env["GEMINI_API_KEY"];
+const BOT_TOKEN = process.env["DISCORD_BOT_TOKEN"];
+const CHANNEL_ID = process.env["DISCORD_CHANNEL_ID"];
 
 // Gemini Configs
 
